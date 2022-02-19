@@ -2,10 +2,10 @@ import numpy as np
 import scipy as sp
 import math
 import numpy as np
-from sklearn.base import BaseEstimator, ClassifierMixin
+from sklearn.base import BaseEstimator,RegressorMixin
 from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
 
-class MMEstimator(BaseEstimator, ClassifierMixin):
+class MMEstimator(BaseEstimator, RegressorMixin):
     """
     MM-estimator of regression S-estimate with high breakingpoint as initialization 
     The latter is computed according to [2]. The Code is a basic translation from the Matlab
